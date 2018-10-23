@@ -23,7 +23,6 @@ body {
 }
 
 .navbar-collapse {
-    justify-content: flex-end;
 }
 
 .navbar {
@@ -54,6 +53,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 -7px 12px rgba(0, 0, 0, 0.8);
     display: inline-flex;
+    justify-content: space-around;
 }
 
 .navbar.scrolled .nav-link {
@@ -112,12 +112,14 @@ section {
     padding: 15px 25px;
     border: 3px double;
     margin: 20px auto;
+    text-align: center;
 }
 
 .pholio h3 {
     font-size: 1.4rem;
     height: 3.5em;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .pholio img {
@@ -137,8 +139,12 @@ section {
     background-repeat: repeat-y;
 }
 
+#clients .row {
+    margin-bottom: -40px;
+}
+
 #clients img {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #clients section {
@@ -186,6 +192,36 @@ footer img {
     margin-bottom: 20px;
     font-size: 1.4rem; */
 }
+
+iframe {
+    min-height: 400px;
+}
+
+#contacts div[class*="col-"] {
+    margin-bottom: 40px;
+}
+
+#contacts .row {
+    margin-bottom: -30px;
+}
+
+@media (max-width: 575.98px) { 
+    .container {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    #clients {
+        text-align: center;
+    }
+    #clients img {
+        width: 60%;
+    }
+
+    footer img {
+        width: 30%;
+    }
+ }
 
 
 /*# sourceMappingURL=style.css.map */
